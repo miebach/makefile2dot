@@ -10,9 +10,16 @@ It is written in Python and implies that you have Python and GraphViz "dot" util
 sudo apt-get install graphviz
 sudo apt-get install python
 
+
+=== Download ===
+
+    sudo curl -o /usr/local/bin/makefile2dot.py https://raw.github.com/miebach/makefile2dot/master/makefile2dot.py
+    sudo chmod a+x /usr/local/bin/makefile2dot.py
+  
+
 === USAGE ===
 
-	python makefile2dot <Makefile >out.dot
+	makefile2dot.py <Makefile >out.dot
 or
-	python makefile2dot <Makefile |dot -Tpng > out.png
+	makefile2dot.py <Makefile |dot -Tpng > out.png
 
